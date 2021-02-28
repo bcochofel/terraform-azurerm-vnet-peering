@@ -22,9 +22,14 @@ jobs:
       - name: Use GitVersion
         uses: gittools/actions/gitversion/execute@v0.9.8
         id: gitversion
-      - uses: tokusumi/markdown-embed-code@main
+      - name: main README.md
+        uses: tokusumi/markdown-embed-code@main
         with:
           markdown: "README.md"
+      - name: basic example README.md
+        uses: tokusumi/markdown-embed-code@main
+        with:
+          markdown: "examples/basic/README.md"
       - name: Changelog
         id: changelog
         uses: nuuday/github-changelog-action@v1.0.0
