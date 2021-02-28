@@ -67,6 +67,7 @@ module "vnet-peering" {
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
+
 ## Requirements
 
 No requirements.
@@ -97,4 +98,5 @@ No input.
 
 No output.
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 

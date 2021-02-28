@@ -8,6 +8,9 @@
 ### Feat
 - first release
 
+### Fix
+- tests
+
 ### Refactor
 - variables naming
 
