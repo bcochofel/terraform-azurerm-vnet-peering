@@ -6,7 +6,7 @@ import (
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
 
-func TestvNetPeeringBasicExample(t *testing.T) {
+func TestVirtualNetPeeringBasicExample(t *testing.T) {
 	t.Parallel()
 
 	// Create values for Terraform
