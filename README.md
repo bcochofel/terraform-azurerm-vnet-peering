@@ -35,19 +35,21 @@ No Modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| vnet1\_id | Virtual Network #1 id. | `string` | n/a | yes |
-| vnet1\_name | Virtual Network #1 name. | `string` | n/a | yes |
-| vnet1\_rg | Virtual Network #1 resource group. | `string` | n/a | yes |
-| vnet2\_id | Virtual Network #2 id. | `string` | n/a | yes |
-| vnet2\_name | Virtual Network #2 name. | `string` | n/a | yes |
-| vnet2\_rg | Virtual Network #2 resource group. | `string` | n/a | yes |
+| peer\_dst\_name | Peer name for destination to source. | `string` | n/a | yes |
+| peer\_src\_name | Peer name for source to destination. | `string` | n/a | yes |
+| vnet\_dst\_id | Virtual Network destination id. | `string` | n/a | yes |
+| vnet\_dst\_name | Virtual Network destination name. | `string` | n/a | yes |
+| vnet\_dst\_rg | Virtual Network destination resource group. | `string` | n/a | yes |
+| vnet\_src\_id | Virtual Network source id. | `string` | n/a | yes |
+| vnet\_src\_name | Virtual Network source name. | `string` | n/a | yes |
+| vnet\_src\_rg | Virtual Network source resource group. | `string` | n/a | yes |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| peer1to2\_id | n/a |
-| peer2to1\_id | n/a |
+| peer\_dst\_id | n/a |
+| peer\_src\_id | n/a |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Run tests
 

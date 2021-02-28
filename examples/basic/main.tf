@@ -43,12 +43,15 @@ module "vnet2" {
 module "vnet-peering" {
   source = "../.."
 
-  vnet1_rg = module.rg1.name
-  vnet2_rg = module.rg2.name
+  vnet_src_rg = module.rg1.name
+  vnet_dst_rg = module.rg2.name
 
-  vnet1_name = module.vnet1.name
-  vnet1_id   = module.vnet1.id
+  vnet_src_name = module.vnet1.name
+  vnet_src_id   = module.vnet1.id
 
-  vnet2_name = module.vnet2.name
-  vnet2_id   = module.vnet2.id
+  vnet_dst_name = module.vnet2.name
+  vnet_dst_id   = module.vnet2.id
+
+  peer_src_name = format("peer-%s2%s", module.vnet1.name, module.vnet2.name)
+  peer_dst_name = format("peer-%s2%s", module.vnet2.name, module.vnet1.name)
 }
